@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/ticker.css">
+    <link rel="stylesheet" href="/assets/css/navbarstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hypersphere</title>
+
+</head>
+
+<body class="contactpage" data-font="">
+  <button type="button" class="logobutton open-sidebar">
+
+    <svg class="hamburger" width="12.521" height="6.82" viewBox="0 0 12.521 6.82">
+    
+    </svg>
+    
+  </button>
+  
+  <div class="sidebar-nav">
+    <p>Menu</p>
+    <button type="button" class="btn-close">X
+  
+  </button>
+  
+    <nav>
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+        </li>
+            <li>
+                <a href="/pages/blog/index.html">Blog</a>
+            </li>
+            <li>
+                <a href="/pages/contact/index.html">Contact</a>
+            </li>
+            <li>
+              <a href="/pages/portfolio/index.html">Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+  </div>
+   <!-- \<p class="introsub"> go away</p> -->
+   <div class="intro">
+    <h1>Contact</h1>
+     </div>
+
+     <section class="blogentries">
+      <div class="blogentry">
+        <div class="buttons">
+        </div>
+        <h1 class="entrytitle">EMAIL: MANAGER@HYPERSPHERE.VENTURES</h1>
+      </div>
+    </section>
+    
+
+      <section>
+        <div class="group2">
+          <div class="row2">
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+            <span>Hypersphere </span>
+          
+          </div>
+
+      </section>
+      <script>
+        loader();
+
+        document.querySelector('.btn').onclick = loader;
+
+        /*====================================
+        *     LOADER
+        ======================================*/
+        function loader(_success) {
+            var obj = document.querySelector('.preloader'),
+                inner = document.querySelector('.preloader_inner'),
+                page = document.querySelector('.page');
+            obj.classList.add('show');
+            page.classList.remove('show');
+            var w = 01,
+                t = setInterval(function() {
+                    w = w + 1;
+                    inner.textContent = w + '!';
+                    if (w === 100) {
+                        obj.classList.remove('show');
+                        page.classList.add('show');
+                        clearInterval(t);
+                        w = 2;
+                        if (_success) {
+                            return _success();
+                        }
+                    }
+                }, 10);
+        }
+    </script>
+    <script>
+      // App.js
+import React from 'react';
+import './App.css';
+
+import Draggable from 'react-draggable';
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <Draggable>
+        <div className="drag-box">
+          <div>I am ready to be Dragged!!!</div>
+        </div>
+      </Draggable>
+    );
+  }
+}
+
+export default App;
+    </script>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script src="/js/navbarscript.js"></script>
+      <script src="/js/navbarscript2.js"></script>
+    </body>
+    </html>
+
+
+

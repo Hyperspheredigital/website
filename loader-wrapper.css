@@ -1,0 +1,278 @@
+.visibleSplash {
+	overflow: show;
+}
+
+
+.contactpage {
+	overflow: hidden;
+}
+
+.splashScreen {
+	width: 100%;
+ 	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--hyperorange);
+	overflow: hidden;
+    z-index: 999999;
+}
+.loadingContainer {
+	width: 90vw;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	overflow: hidden;
+}
+.loadingBox {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.loadingBarContainer {
+    width: 100%;
+    background: var(--hyperpurple);
+    height: 10px;
+    display: block;
+    margin: 50px 0 0;
+    overflow: hidden;
+}
+.loadingbar {
+	width: 100%;
+	height:10px;
+	background: var(--hypergreen);
+	position: absolute;
+	left: -100%;
+}
+
+
+
+.splashBehind {
+	background: red;
+	width: 100%;
+	height: 100vh;
+}
+
+/* ticker ----------------------------------- */
+
+
+  @-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  
+  .ticker-wrap {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding-left: 100%;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+  }
+  .ticker-wrap .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    margin-bottom: 1rem;
+  }
+
+  .blog .ticker-wrap .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    margin-bottom: 1rem;
+  }
+  .ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-family: var(--headerserif);
+    font-size: 40rem;
+    color: var(--hypergrey);
+
+  }
+
+  .loadingtext{
+    font-family: var(--headersans);
+    font-size: 3vw;
+    letter-spacing: -.21vw;
+    margin: auto;
+    margin-top: 2.5rem;
+    right: 0;
+    text-align: center;
+    padding-left: unset;
+    margin-left: -1rem;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    color: var(--hypergrey);
+  }
+  .animate-me {
+    background-color: #222;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--headersans);
+    height: 100vh;
+    letter-spacing: 6px;
+    margin: 0;
+  }
+
+  .blog .animate-me {
+    background-color: var(--hyperdarkgrey);
+    color: #fff;
+    font-weight: normal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--headersans);
+    height: 100vh;
+    letter-spacing: 6px;
+    margin: 0;
+  }
+  
+
+  
+
+  .loadingtext {
+    padding: 0 5%;
+  }
+  @media screen and (max-width: 1440px) {
+  .ticker-wrap .ticker__item{
+    font-size: 20rem;
+  }
+  .animejswrapper{
+    display: none;
+  }
+  .animate-me {
+    font-size: 2rem;
+  }
+  }
+
+  @media screen and (max-width: 450px) {
+  .ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-family: var(--headerserif);
+    font-size: 10rem;
+    color: var(--hypergrey);
+
+  }
+
+  .animejswrapper{
+    display: none;
+  }
+
+  .animejswrapper3{
+    display: none;
+  }
+
+  .loadingtext{
+  font-size: 5vw;
+  }
+
+  .blog .ticker-wrap .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    margin-bottom: 10rem;
+  }
+
+  .contactpage .ticker-wrap .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    margin-bottom: 10rem;
+  }
+  .animate-me {
+    background-color: #222;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--headersans);
+    height: 100vh;
+    letter-spacing: 6px;
+    margin: 0;
+  }
+}
