@@ -736,6 +736,7 @@ div.blogentry:hover *
         z-index: -99999;
         display: inline;
         position: absolute;
+        box-shadow: none;
      }
     .one {
         width: 100px;

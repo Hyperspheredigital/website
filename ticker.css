@@ -138,7 +138,7 @@ section .group2 .row2:nth-child(even) {
     word-spacing: 0.004em;
     font-size: 1.5rem;
     text-align: center;
-    margin-left: 1rem;
+    margin-right: .251rem;
     text-transform: uppercase;
     color: var(--hyperblack);
     margin-top: 0rem;
