@@ -204,15 +204,28 @@
 
 
       <script>
+    $('body').css({
+      overflow: 'hidden'
+    });
         $('.loadingbar').delay(1000).animate({left: '0'}, 3000);
         $('.loadingBox').delay(400).animate({opacity: '1'}, 1000);
         $('.loadingtext').delay(400).animate({opacity: '1'} , 1000);
         $('.splashScreen').delay(4000).animate({top: '-150%'}, 1000);
-        $('body').delay(3500).queue(function(){
-          $('body').addClass("visibleSplash");
+        setTimeout(function(){
+      $('#load').animate({top: '-150%'}, 500) (function(){
+        $('body').css({
+          overflow: 'auto'
         });
+      });
+    }, 3500);
             </script>
-        
+
+          <script>
+            $('body').delay(3600).queue(function(){
+                $('body').css({
+                  overflow: 'auto'
+                });
+            }); </script>
 
 <script>
   let mouseCursor = document.querySelector(".bigcursor")
