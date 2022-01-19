@@ -749,6 +749,15 @@ div.blogentry:hover *
         position: absolute;
         box-shadow: none;
      }
+
+     .clickwrapper1:hover, .clickwrapper2:hover, .clickwrapper3:hover, .clickwrapper4:hover, .clickwrapper5:hover, .clickwrapper6:hover, .clickwrapper7:hover, .clickwrapper8:hover, .clickwrapper9:hover, .clickwrapper10:hover, .clickwrapper11:hover, .clickwrapper12:hover, .clickwrapper13:hover{
+        background-color: transparent;
+     }
+
+     .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .ten:hover, .eleven:hover, .twelve:hover, .thirteen:hover {
+        background-image: none;
+        background-color: transparent;
+    }
     .one {
         width: 100px;
         height: 100px;
