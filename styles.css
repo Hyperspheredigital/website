@@ -973,8 +973,18 @@ div.blogentry:hover *
         padding-top: 3.4rem;
         margin-left: 1rem;
     }
-    .contact p{
+    .contact p, .disclosure2 p{
         font-size: calc(.8rem);
+    }
+
+    .disclosure2 {
+        background-color: var(--hypergreen);
+        width: auto;
+        line-height: 1rem;
+        right: 0rem;
+        bottom: 5rem;
+        z-index: 99;
+        position: fixed;
     }
     .bigcursor{
         display: none;
