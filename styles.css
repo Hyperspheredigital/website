@@ -91,7 +91,7 @@ height: 100vh;
     }
 
 
-.contactpage, .portfolio{
+.contactpage, .disclosure, .portfolio{
 background-color: var(--hypergrey);
 }
 
@@ -128,8 +128,6 @@ background-color: var(--hypergrey);
             user-select: none;
             position: relative;
           }
-
-
       
      
       
@@ -139,11 +137,6 @@ background-color: var(--hypergrey);
       
           .item:hover {
             cursor: pointer;
-          }
-
-          .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .ten:hover, .eleven:hover, .twelve:hover, .thirteen:hover {
-              background-image: none;
-              background-color: var(--hyperpurple);
           }
 
 .introsub{
@@ -243,11 +236,21 @@ body section .group{
     position: fixed;
 }
 
-.contact:hover {
+.disclosure2 {
+    background-color: var(--hypergreen);
+    width: auto;
+    line-height: 1rem;
+    right: 12rem;
+    bottom: 0;
+    z-index: 99;
+    position: fixed;
+}
+
+.contact:hover, .disclosure2:hover {
     background-color: var(--hyperorange);
 }
 
-.contact p {
+.contact p, .disclosure2 p {
     font-family: var(--headersans);
     text-transform: uppercase;
     letter-spacing: .05rem;
@@ -300,6 +303,15 @@ body .offerings p {
     margin: auto;
     height: auto;
     z-index: -1;
+}
+
+.disclosure p {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'monument_grotesksemi-mono';
+    max-width: 70ch;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 4rem;
 }
 
 .blogentry{
@@ -405,10 +417,6 @@ div.blogentry:hover *
     z-index: -99999;
     display: inline;
     position: absolute;
- }
-
- .clickwrapper1:hover, .clickwrapper2:hover, .clickwrapper3:hover, .clickwrapper4:hover, .clickwrapper5:hover, .clickwrapper6:hover, .clickwrapper7:hover, .clickwrapper8:hover, .clickwrapper9:hover, .clickwrapper10:hover, .clickwrapper11:hover, .clickwrapper12:hover, .clickwrapper13:hover{
-    background-color: var(--hyperblack);
  }
 
  .clickwrapper1{
@@ -663,7 +671,7 @@ div.blogentry:hover *
  .build{
     color: var(--hypergreen);
  }
- .contactpage .intro h1 {
+ .contactpage .intro h1, .disclosure .intro h1 {
     font-family: var(--headerserif);
     color: var(--hyperblack);
     background-color: transparent;
@@ -697,7 +705,7 @@ div.blogentry:hover *
         font-size: 20vw;
      }
 
-     .contactpage .intro h1{
+     .contactpage .intro h1, .disclosure .intro h1{
         font-size: 20vw;
         letter-spacing: -1.8vw;
      }
@@ -714,11 +722,11 @@ div.blogentry:hover *
          transform: translate(-10%, -20%);
      }
 
-     .contact{
+     .contact, .disclosure2{
         width: 8rem;
      }
 
-     .contact p{
+     .contact p, .disclosure2 p{
         font-size: calc(1rem + .25vw);
      }
 
@@ -747,17 +755,7 @@ div.blogentry:hover *
         z-index: -99999;
         display: inline;
         position: absolute;
-        box-shadow: none;
      }
-
-     .clickwrapper1:hover, .clickwrapper2:hover, .clickwrapper3:hover, .clickwrapper4:hover, .clickwrapper5:hover, .clickwrapper6:hover, .clickwrapper7:hover, .clickwrapper8:hover, .clickwrapper9:hover, .clickwrapper10:hover, .clickwrapper11:hover, .clickwrapper12:hover, .clickwrapper13:hover{
-        background-color: transparent;
-     }
-
-     .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .ten:hover, .eleven:hover, .twelve:hover, .thirteen:hover {
-        background-image: none;
-        background-color: transparent;
-    }
     .one {
         width: 100px;
         height: 100px;
@@ -994,7 +992,7 @@ div.blogentry:hover *
 
 }
 
-.contactpage .intro{
+.contactpage .intro, .disclosure .intro{
     color: var(--hyperblack);
       background-color: transparent;
      padding-top: .5rem;
@@ -1051,7 +1049,7 @@ div.blogentry:hover *
      background-color: transparent;
  }
 
- .contactpage .intro h1{
+ .contactpage .intro h1, .disclosure .intro h1{
     font-family: var(--headerserif);
     color: var(--hyperblack);
     background-color: transparent;
@@ -1144,7 +1142,7 @@ body .offerings p {
     line-height: 1rem;
 }
 
-.contactpage .blogentries{
+.contactpage .blogentries, .disclosure .blogentries{
     position: absolute;
     width: 90%;
     left: 0;

@@ -49,7 +49,7 @@ a {
     position: fixed;
     top: 0;
     left: -100%;
-    min-width: 300px;
+    min-width: 340px;
     height: 100%;
     background-color: var(--hyperpurple);
     z-index: 100000;

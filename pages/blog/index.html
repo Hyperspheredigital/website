@@ -77,6 +77,9 @@
             <li>
               <a href="/pages/portfolio/index.html">Squad</a>
             </li>
+            <li>
+              <a href="/pages/disclosure/index.html">Disclosure</a>
+            </li>
         </ul>
     </nav>
   </div>
@@ -88,7 +91,7 @@
 
      <section class="blogentries">
       <div class="blogentry">
-        <a href="https://www.blog.hypersphere.ventures/post/why-we-re-excited-for-moonbeam">
+        <a href="https://www.hypersphere.ventures/post/why-we-re-excited-for-moonbeam">
         <div class="buttons">
         </div>
         <h1 class="entrytitle">Why We’re Excited for Moonbeam</h1>
@@ -97,7 +100,7 @@
       </div>
 
       <div class="blogentry">
-        <a href="https://www.blog.hypersphere.ventures/post/parachain-auctions-what-we-ve-learned">
+        <a href="https://www.hypersphere.ventures/post/parachain-auctions-what-we-ve-learned">
         <div class="buttons">
         </div>
         <h1 class="entrytitle">Parachain Auctions — What We’ve Learned</h1>
@@ -106,7 +109,7 @@
       </div>
 
       <div class="blogentry">
-        <a href="https://www.blog.hypersphere.ventures/post/hypersphere-leads-seed-round-for-talisman-multi-chain-wallet">
+        <a href="https://www.hypersphere.ventures/post/hypersphere-leads-seed-round-for-talisman-multi-chain-wallet">
         <div class="buttons">
         </div>
         <h1 class="entrytitle">  Hypersphere Leads Seed Round for Talisman Multi-Chain Wallet</h1>
@@ -115,7 +118,7 @@
       </div>
 
       <div class="blogentry">
-        <a href="https://www.blog.hypersphere.ventures/post/hypersphere-and-ledgerprime-write-the-first-dot-option">
+        <a href="https://www.hypersphere.ventures/post/hypersphere-and-ledgerprime-write-the-first-dot-option">
         <div class="buttons">
         </div>
         <h1 class="entrytitle">Hypersphere and LedgerPrime Write the First DOT Option</h1>
@@ -204,28 +207,15 @@
 
 
       <script>
-    $('body').css({
-      overflow: 'hidden'
-    });
         $('.loadingbar').delay(1000).animate({left: '0'}, 3000);
         $('.loadingBox').delay(400).animate({opacity: '1'}, 1000);
         $('.loadingtext').delay(400).animate({opacity: '1'} , 1000);
         $('.splashScreen').delay(4000).animate({top: '-150%'}, 1000);
-        setTimeout(function(){
-      $('#load').animate({top: '-150%'}, 500) (function(){
-        $('body').css({
-          overflow: 'auto'
+        $('body').delay(3500).queue(function(){
+          $('body').addClass("visibleSplash");
         });
-      });
-    }, 3500);
             </script>
-
-          <script>
-            $('body').delay(3600).queue(function(){
-                $('body').css({
-                  overflow: 'auto'
-                });
-            }); </script>
+        
 
 <script>
   let mouseCursor = document.querySelector(".bigcursor")
